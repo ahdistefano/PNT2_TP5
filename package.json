@@ -1,5 +1,5 @@
 {
-  "name": "pnt2_tp5",
+  "name": "PNT2_TP5",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
@@ -30,9 +31,13 @@
       "eslint:recommended"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "babel-eslint",
+      "vueFeatures": {
+          "interpolationAsNonHTML": true
+      }
     },
-    "rules": {}
+    "rules": { "no-mixed-spaces-and-tabs": 0
+    }
   },
   "browserslist": [
     "> 1%",
